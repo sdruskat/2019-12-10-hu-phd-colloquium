@@ -1,8 +1,8 @@
 ---
-title:  'The Citation File Format (CFF): <br/> Why, what, how?'
-subtitle: 'Scientific Software Registry Collaboration Workshop,<br/>University of Maryland, College Park, MD, 2019-11-13'
+title:  'Impact of dependencies in research software'
+subtitle: 'Colloquium,<br/>Dept. of Computer Science, Humboldt-Universität zu Berlin, 2019-12-10'
 author: 
-    - '<em>Stephan Druskat</em> (German Aerospace Center (DLR),<br/>Friedrich Schiller University Jena, Humboldt-Universität zu Berlin)<br/><img src="image/cc-by.png">'
+    - '<em>Stephan Druskat</em><br/><img src="image/cc-by.png">'
 theme: 'humboldt'
 center: 'false'
 slideNumber: 'true'
@@ -13,9 +13,9 @@ mathjaxurl: 'lib/mathjax/MathJax.js'
 aspectratio: 169
 ---
 
-# Citation File Format: Why?
+# Overview 
 
-## Software citation has a metadata problem
+## Software citation has a metadata problem {class="no-toc-progress"}
 
 - Growing awareness of the central role of software in research
 - Consequence: treat software as a first-class citizen in research

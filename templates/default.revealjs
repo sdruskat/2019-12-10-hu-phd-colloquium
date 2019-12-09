@@ -17,7 +17,8 @@ $endif$
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
   <link rel="stylesheet" href="$revealjs-url$/css/reveal.css">
-  <style type="text/css">
+  <link rel="stylesheet" href="$revealjs-url$/plugin/toc-progress/toc-progress.css">
+    <style type="text/css">
       code{white-space: pre-wrap;}
       span.smallcaps{font-variant: small-caps;}
       span.underline{text-decoration: underline;}
@@ -98,6 +99,7 @@ $body$
       // Full list of configuration options available at:
       // https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
+
 $if(controls)$
         // Display controls in the bottom right corner
         controls: $controls$,
@@ -254,6 +256,28 @@ $if(mathjax)$
             processClass: 'tex2jax_process'
           },
         },
+        tableofcontents: {
+        // Specifies the slide title of the table of contents slide
+        title: "Table of Contents",
+
+        // Specifies the position of the table of contents slide in the presentation
+        position: 2,
+
+        // Specifies html tag in which the table of contents title stands
+        titleTag: "h2",
+
+        // Specifies which slide tag elements will be used
+        // for generating the table of contents.
+        titleTagSelector: "h1",
+
+        // Specifies if the first slide, mostly the title slide of the presentation, should be ignored.
+        ignoreFirstSlide: true,
+
+        // Specifies if every single element of the table of contents
+        // will be stepped through before moving on to the next slide.
+        fadeInElements: true
+    },
+
 $endif$
 
         // Optional reveal.js plugins
@@ -267,8 +291,16 @@ $endif$
 $if(mathjax)$
           { src: '$revealjs-url$/plugin/math/math.js', async: true },
 $endif$
-          { src: '$revealjs-url$/plugin/notes/notes.js', async: true }
+          { src: '$revealjs-url$/plugin/notes/notes.js', async: true },
+          { src: '$revealjs-url$/plugin/toc-progress/toc-progress.js', async: true, callback: function() { toc_progress.initialize(); toc_progress.create(); } },
+          { src: '$revealjs-url$/plugin/toc/toc.js', async: true },
         ]
+
+
+
+
+
+
       });
     </script>
   $for(include-after)$

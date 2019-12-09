@@ -3,7 +3,6 @@
  *
  * By Hakim El Hattab, http://hakim.se
  */
-@import url(../../lib/font/junicode/Junicode.css);
 @import url(../../lib/font/source-code-pro/source-code-pro.css);
 section.has-dark-background, section.has-dark-background h1, section.has-dark-background h2, section.has-dark-background h3, section.has-dark-background h4, section.has-dark-background h5, section.has-dark-background h6 {
   color: #fff; }
@@ -16,7 +15,7 @@ body {
   background-color: #fff; }
 
 .reveal {
-  font-family: "Junicode", "Times New Roman", serif;
+  font-family: sans-serif;
   font-size: 32px;
   font-weight: normal;
   color: #222; }
@@ -47,7 +46,7 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #222;
-  font-family: "Junicode", "Times New Roman", serif;
+  font-family: sans-serif;
   font-weight: normal;
   line-height: 1.2;
   letter-spacing: normal;
@@ -293,13 +292,13 @@ body {
 .reveal code {
   font-family: 'Source Code Pro', monospace; }
 .reveal pre {
-  font-size: 17.7777777778px; }
+  font-size: 17.77778px; }
 .reveal .center {
   text-align: center; }
 .reveal #title-slide {
   background-image: url(../../../../../image/logo.png);
   background-repeat: no-repeat;
-  background-size: 100px 317px;
+  background-size: 100px 202px;
   background-position: right 0px top 0px; }
 .reveal .references {
   font-size: 22px !important; }

@@ -13,7 +13,7 @@
 
 
 // Include theme-specific fonts
-@import url(../../lib/font/junicode/Junicode.css);
+// @import url(../../lib/font/junicode/Junicode.css);
 @import url(../../lib/font/source-code-pro/source-code-pro.css);
 
 $HuBlue: rgb(0,55,108);
@@ -27,8 +27,8 @@ $mainColor: #222;
 $headingColor: #222;
 
 $mainFontSize: 32px;
-$mainFont: 'Junicode',  'Times New Roman', serif;
-$headingFont: 'Junicode', 'Times New Roman', serif;
+$mainFont: sans-serif;
+$headingFont: sans-serif;
 $headingTextShadow: none;
 $headingLetterSpacing: normal;
 $headingTextTransform: none;

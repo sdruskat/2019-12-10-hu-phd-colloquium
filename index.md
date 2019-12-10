@@ -13,6 +13,15 @@ mathjaxurl: 'lib/mathjax/MathJax.js'
 aspectratio: 169
 ---
 
+# Aim
+
+## Aim of the dissertation
+
+::: center
+Metric of impact of dependencies in research software as
+a definition of contribution to software for citation.
+:::
+
 # Software citation
 
 ## Background
@@ -246,6 +255,14 @@ $\mathcal{V} = \{P,A,I,C,O\}$ in $G_3 = (V, E)$
 - Definition of contribution by humans/papers: manually, augmented (spliddit)
 :::
 
+## Method
+
+1. Define & retrieve a gold standard dataset of research software
+2. Build a larger dataset of research software in Python from GitHub
+3. Define the impact metric
+4. Retrieve metrics for dataset
+5. Evaluate metric & measurement implementation
+
 ## Impact of dependencies on research software
 
 - Why impact?
@@ -253,7 +270,7 @@ $\mathcal{V} = \{P,A,I,C,O\}$ in $G_3 = (V, E)$
     - <strike>LOC?</strike>
     - <strike>Gameable metrics (stars, downloads, forks)?</strike>
 
-- Why measure?
+- Why measure programmatically?
     - Imprecise & expensive manual definition ("haggling")
 
 - What is "impact"?
@@ -267,14 +284,6 @@ $\mathcal{V} = \{P,A,I,C,O\}$ in $G_3 = (V, E)$
 - Efficiency?
 
 :::
-
-## How to measure impact?
-
-- Static code analysis
-- Research software dataset (GitHub, Python)
-- ???
-
-# Thank you! 
 
 ## Questions?
 

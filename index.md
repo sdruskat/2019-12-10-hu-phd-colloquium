@@ -31,6 +31,7 @@ a definition of contribution to software for citation.
 - Research software citation [@smithSoftwareCitationPrinciples2016], e.g.:
     - Importance of software
     - Credit and attribution of software
+- Credit for software work = research work, research evaluations, careers, etc.
 - Implementation of software citation? [@druskatSoftwareDependenciesResearch2019]
 
 ::: notes
@@ -255,6 +256,30 @@ $\mathcal{V} = \{P,A,I,C,O\}$ in $G_3 = (V, E)$
 - Definition of contribution by humans/papers: manually, augmented (spliddit)
 :::
 
+## Transitive credit
+
+::: small
+D. Katz, “Transitive Credit as a Means to Address Social and Technological Concerns Stemming from Citation and Attribution of Digital Products” [@katzTransitiveCreditMeans2014]
+:::
+
+- Requirements for robust citation of digital products: 
+    - register products & creditable contributions
+    - track usage
+- **Define fractional credit for *all* contributions** (RQ)
+- Credit maps feed into downstream maps
+- Tracking into future → credit for software work
+
+::: notes
+- Robust citation of digital products needs two things to happen
+    - register products & creditable contributions
+    - track usage into past and future
+- All contributions, not just authorship
+- P with S = 0.1
+- S with A = 0.5
+- S(P) = 0.05
+:::
+
+
 ## Method
 
 1. Define & retrieve a gold standard dataset of research software
@@ -320,8 +345,10 @@ ORCiD [0000-0003-4925-7248](https://orcid.org/0000-0003-4925-7248)
 - Provision of metadata
     - By creators
     - `CITATION.cff`
+    - Challenge: automation
 - Metadata processing
     - Ingestion by registries/indexers
+    - Challenge: uptake
 
 ## PID graph
 
@@ -331,7 +358,7 @@ ORCiD [0000-0003-4925-7248](https://orcid.org/0000-0003-4925-7248)
 ## Why another metric?
 
 - Culture around papers publishing
-- More objective metric
-- Not gameable within reason
+- (Hopefully) more objective metric
+- Not gameable (within reason)
 
 ## References 

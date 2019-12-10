@@ -55,6 +55,7 @@
 <li>Importance of software</li>
 <li>Credit and attribution of software</li>
 </ul></li>
+<li>Credit for software work = research work, research evaluations, careers, etc.</li>
 <li>Implementation of software citation? <span class="citation" data-cites="druskatSoftwareDependenciesResearch2019">[2]</span></li>
 </ul>
 <aside class="notes">
@@ -288,6 +289,34 @@
 <li>Definition of contribution by humans/papers: manually, augmented (spliddit)</li>
 </ul>
 </aside>
+</section><section id="transitive-credit" class="slide level2">
+<h2>Transitive credit</h2>
+<div class="small">
+<p>D. Katz, “Transitive Credit as a Means to Address Social and Technological Concerns Stemming from Citation and Attribution of Digital Products” <span class="citation" data-cites="katzTransitiveCreditMeans2014">[3]</span></p>
+</div>
+<ul>
+<li>Requirements for robust citation of digital products:
+<ul>
+<li>register products &amp; creditable contributions</li>
+<li>track usage</li>
+</ul></li>
+<li><strong>Define fractional credit for <em>all</em> contributions</strong> (RQ)</li>
+<li>Credit maps feed into downstream maps</li>
+<li>Tracking into future → credit for software work</li>
+</ul>
+<aside class="notes">
+<ul>
+<li>Robust citation of digital products needs two things to happen
+<ul>
+<li>register products &amp; creditable contributions</li>
+<li>track usage into past and future</li>
+</ul></li>
+<li>All contributions, not just authorship</li>
+<li>P with S = 0.1</li>
+<li>S with A = 0.5</li>
+<li>S(P) = 0.05</li>
+</ul>
+</aside>
 </section><section id="method" class="slide level2">
 <h2>Method</h2>
 <ol type="1">
@@ -336,20 +365,54 @@ ORCiD <a href="https://orcid.org/0000-0003-4925-7248">0000-0003-4925-7248</a><br
 <section><section id="appendix" class="title-slide slide level1"><h1>Appendix</h1></section><section id="digression-research-software-classification" class="slide level2">
 <h2>Digression: research software classification</h2>
 <ul>
-<li>RQ: How can we classify software as research software?</li>
+<li><em>RQ<sub>3</sub></em>: How can we classify software as research software?</li>
+<li>Mining software repositories</li>
+<li>Simple attribute tests</li>
+<li>Topic modeling</li>
+<li>Machine learning</li>
 </ul>
 </section><section id="software-publication" class="slide level2">
 <h2>Software publication</h2>
-<p>Pros and cons (cf. principles) - Lack of practice (peer review) - Software papers</p>
+<ul>
+<li>Lack of practice of research software publication
+<ul>
+<li>Metadata</li>
+<li>Unique identification</li>
+</ul></li>
+<li>Software papers
+<ul>
+<li>Necessary evil</li>
+<li>To be cited in addition to software <span class="citation" data-cites="smithSoftwareCitationPrinciples2016">[1]</span></li>
+</ul></li>
+</ul>
 </section><section id="metadata" class="slide level2">
 <h2>Metadata</h2>
-<p>How to get it?</p>
-</section><section id="pidgraph" class="slide level2">
-<h2>PIDgraph</h2>
-<p>Implementation of RCG</p>
+<ul>
+<li>Provision of metadata
+<ul>
+<li>By creators</li>
+<li><code>CITATION.cff</code></li>
+<li>Challenge: automation</li>
+</ul></li>
+<li>Metadata processing
+<ul>
+<li>Ingestion by registries/indexers</li>
+<li>Challenge: uptake</li>
+</ul></li>
+</ul>
+</section><section id="pid-graph" class="slide level2">
+<h2>PID graph</h2>
+<ul>
+<li>Possible implementation of research citation graphs</li>
+<li><a href="http://web.archive.org/web/20190712173134/https://www.project-freya.eu/en/blogs/blogs/the-pid-graph">project-freya.eu/en/blogs/blogs/the-pid-graph</a></li>
+</ul>
 </section><section id="why-another-metric" class="slide level2">
 <h2>Why another metric?</h2>
-<p>Yes, why?</p>
+<ul>
+<li>Culture around papers publishing</li>
+<li>(Hopefully) more objective metric</li>
+<li>Not gameable (within reason)</li>
+</ul>
 </section><section id="references" class="slide level2 unnumbered">
 <h2>References</h2>
 <div id="refs" class="references" role="doc-bibliography">
@@ -358,6 +421,9 @@ ORCiD <a href="https://orcid.org/0000-0003-4925-7248">0000-0003-4925-7248</a><br
 </div>
 <div id="ref-druskatSoftwareDependenciesResearch2019">
 <p>[2] Stephan Druskat, “Software and Dependencies in Research Citation Graphs,” <em>Computing in Science and Engineering</em>, pp. 1–1, 2019 [Online]. Available: <a href="https://doi.org/10.1109/MCSE.2019.2952840">https://doi.org/10.1109/MCSE.2019.2952840</a>.</p>
+</div>
+<div id="ref-katzTransitiveCreditMeans2014">
+<p>[3] Daniel Katz, “Transitive Credit as a Means to Address Social and Technological Concerns Stemming from Citation and Attribution of Digital Products,” <em>Journal of Open Research Software</em>, vol. 2, no. 1, p. e20, Jul. 2014 [Online]. Available: <a href="http://doi.org/10.5334/jors.be">http://doi.org/10.5334/jors.be</a>.</p>
 </div>
 </div>
 </section></section>

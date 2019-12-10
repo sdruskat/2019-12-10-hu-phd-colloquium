@@ -317,6 +317,7 @@ D. Katz, “Transitive Credit as a Means to Address Social and Technological Con
 stephan.druskat@hu-berlin.de  
 Twitter: [\@stdruskat](http://twitter.com/stdruskat)  
 ORCiD [0000-0003-4925-7248](https://orcid.org/0000-0003-4925-7248)  
+Slides: [sdruskat.net/2019-12-10-hu-phd-colloquium/](https://sdruskat.net/2019-12-10-hu-phd-colloquium/)
 <!-- Slides: [doi:10.6084/m9.figshare.10296917](https://doi.org/10.6084/m9.figshare.10296917) -->
 
 :::

@@ -39,43 +39,318 @@
   <p class="author"><em>Stephan Druskat</em><br/><img src="image/cc-by.png"></p>
 </section>
 
-<section><section id="overview" class="title-slide slide level1"><h1>Overview</h1></section><section id="background" class="slide level2">
+<section><section id="software-citation" class="title-slide slide level1"><h1>Software citation</h1></section><section id="background" class="slide level2">
 <h2>Background</h2>
 <ul>
-<li>Background here</li>
-<li>Consequence: treat software as a first-class citizen in research</li>
-<li>Ergo: cite software as you would cite a paper</li>
-</ul>
-<div class="fragment">
+<li>Digitalization: software is eating research ···ᗤ</li>
+<li>Software as a research product</li>
+<li>Research software citation <span class="citation" data-cites="smithSoftwareCitationPrinciples2016">[1]</span>, e.g.:
 <ul>
-<li>Citation-relevant metadata not readily available</li>
-<li>Available metadata not reliable<br />
-(e.g., “correct” authors &amp; contributors != GitHub committers)</li>
+<li>Importance of software</li>
+<li>Credit and attribution of software</li>
+</ul></li>
+<li>Implementation of software citation? <span class="citation" data-cites="druskatSoftwareDependenciesResearch2019">[2]</span></li>
+</ul>
+<aside class="notes">
+<ul>
+<li>Hardly any research conducted without research software</li>
+<li>Research software != general purpose tools</li>
+<li>What is software’s place in research?</li>
+<li>Embeds or implements research knowledge</li>
+<li>Should be treated as a research product on par with papers (1st class citizen)</li>
+<li>Ergo: software should be cited
+<ul>
+<li>Importance principle: Cite software itself as you would papers</li>
+<li>Citation should facilitate scholarly credit and normative attribution</li>
+</ul></li>
+<li>Problem: Implementation</li>
+<li>Citation system doesn’t yet work for software</li>
+<li>The following summarizes Druskat 2019</li>
+</ul>
+</aside>
+</section><section id="citation" class="slide level2">
+<h2>Citation</h2>
+<ul>
+<li>Sociotechnical system</li>
+<li>Functions:
+<ul>
+<li>context function</li>
+<li>social functions (trust, authority, credit, evaluation)</li>
+<li>compliance function</li>
+<li>discursive function</li>
+<li>reproducibility function</li>
+</ul></li>
+</ul>
+<aside class="notes">
+<ul>
+<li>Context: enables tracability of outcomes</li>
+<li>Social: establishes trust and authority, enables credit and evaluation</li>
+<li>Compliance: with good scientific practice (DFG Code)</li>
+<li>Discursive: Organization/shaping of research discourses/“dynamically rewriting the past”</li>
+<li>Reproducibilty: Enabled through complete &amp; correct citation</li>
+</ul>
+</aside>
+</section><section id="citation-and-software" class="slide level2">
+<h2>Citation and software</h2>
+<ul>
+<li>Integration of software in the citation system</li>
+<li>Software-specific (vs. papers) &amp; general challenges:
+<ul>
+<li>seriality, versions, concepts</li>
+<li>identification</li>
+<li>dynamicity &amp; staticity</li>
+<li>references in software?</li>
+<li>contribution types</li>
+</ul></li>
+</ul>
+<aside class="notes">
+<ul>
+<li>seriality &amp; versions: paper only one (but preprint, concept never cited), software many + concepts</li>
+<li>identification: publication practices/PIDs; concepts are also identified</li>
+<li>dynamicity: n products (source code + states at runtime) BUT vs. principles</li>
+<li>dependencies: indirect &amp; direct passive contributions become part of the object at runtime</li>
+<li>contribution types differ: general issue</li>
+</ul>
+</aside>
+</section></section>
+<section><section id="research-citation-graphs" class="title-slide slide level1"><h1>Research citation graphs</h1></section><section id="modeling-the-citation-system" class="slide level2">
+<h2>Modeling the citation system</h2>
+<p><strong>Context function</strong></p>
+<ul>
+<li>Citation between products: <span class="math inline">\(G = (V,E)\)</span>
+<ul>
+<li><span class="math inline">\(V\)</span> = research products</li>
+<li><span class="math inline">\(E\)</span> = <code>cite</code> relations (<span class="math inline">\(p_1 \in V\)</span> and <span class="math inline">\(p_2 \in V\)</span> and <span class="math inline">\((v_1, v_2) \in E\)</span>)</li>
+</ul></li>
+</ul>
+<div class="center">
+<p><img src="image/g1.png" style="height:120px;"></p>
+</div>
+<aside class="notes">
+<ul>
+<li>Covers the context function</li>
+<li>back-tracking, forward-tracking</li>
+</ul>
+</aside>
+</section><section id="current-model" class="slide level2">
+<h2>Current model</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="small">
+<p><strong>Social functions</strong><br />
+(trust &amp; authority, credit, (evaluation))</p>
+<p><span class="math inline">\(\mathcal{V} = \{P,A,I,C\}\)</span> in <span class="math inline">\(G_2 = (V, E)\)</span></p>
+<ul>
+<li>Research products</li>
+<li>Authors</li>
+<li>Affiliations</li>
+<li>Containers</li>
+<li><code>affil</code>, <code>auth</code>, <code>pub-in</code>, <code>cite</code></li>
 </ul>
 </div>
-</section><section id="dependencies-in-the-research-citation-graph" class="slide level2">
-<h2>Dependencies in the research citation graph</h2>
+</div><div class="column" style="width:45%;">
+<p><img src="image/g2.png" style="height:350px;"></p>
+</div>
+</div>
+<aside class="notes">
 <ul>
-<li><span class="citation" data-cites="druskatStandardFormatCITATION2017">[1]</span></li>
+<li>Represents the current system of citation for textual products</li>
+<li>A = authors, I = affiliations, C = containers</li>
+<li>V = set of disjoint sets of vertices in the graph</li>
+<li>Trust &amp; authority for actors through citation</li>
+<li>Credit for actors through citations</li>
+<li>Enables evaluation</li>
+</ul>
+</aside>
+</section><section id="improved-model" class="slide level2">
+<h2>Improved model</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="small">
+<p><strong>Compliance, reproducibility, discursivity</strong></p>
+<p><span class="math inline">\(\mathcal{V} = \{P,A,I,C,O\}\)</span> in <span class="math inline">\(G_3 = (V, E)\)</span></p>
+<ul>
+<li>Research products</li>
+<li>Authors</li>
+<li>Affiliations</li>
+<li>Containers</li>
+<li>Concepts</li>
+<li><code>affil</code>, <code>contrib*</code>, <code>pub-in</code>, <code>cite</code>, <code>real</code>, <code>prec</code></li>
+</ul>
+</div>
+</div><div class="column" style="width:45%;">
+<p><img src="image/g3.png" style="height:350px;"></p>
+</div>
+</div>
+<aside class="notes">
+<ul>
+<li>Compliance with funders’ guidelines through software citation</li>
+<li>DFG Code 2019:</li>
+</ul>
+<blockquote>
+<p>Die Herkunft von im Forschungsprozess verwendeten Daten, Organismen, Materialien und Software wird kenntlich gemacht und die Nachnutzung belegt; die Originalquellen werden zitiert.</p>
+</blockquote>
+<ul>
+<li>Reproducibility through complete and exact referencing</li>
+<li>Discursivity possible even for software</li>
+</ul>
+</aside>
+</section><section id="applications" class="slide level2">
+<h2>Applications</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Citation tracking &amp; analysis</li>
+<li>Contribution role analysis</li>
+<li>Software development practices</li>
+<li>Credit for “hidden” research contributions</li>
+<li>Transitive credit</li>
+</ul>
+</div><div class="column" style="width:45%;">
+<p><img src="image/g3.png" style="height:350px;"></p>
+</div>
+</div>
+<aside class="notes">
+<ul>
+<li>How can RCGs be useful?</li>
+<li>back-tracking context exploration</li>
+<li>citation tracking</li>
+<li>tracking of concept citation</li>
+<li>self-citation analysis</li>
+<li>Contribution analysis:
+<ul>
+<li>How are roles distributed over contributors</li>
+<li>based on taxonomy fine-grained evaluation of contributors</li>
+</ul></li>
+<li>Credit for “hidden” contributions
+<ul>
+<li>Paper citations can be traced linearly</li>
+<li>Dependencies can be found in the graph</li>
+</ul></li>
+<li>Transitive credit</li>
+</ul>
+</aside>
+</section><section id="challenges" class="slide level2">
+<h2>Challenges</h2>
+<ul>
+<li>Cultural challenges</li>
+<li>Software publication practice</li>
+<li>Metadata</li>
+</ul>
+<aside class="notes">
+<ul>
+<li>Cultural challenges:
+<ul>
+<li>Software as a research product (Importance principle)</li>
+<li>Practice of software citation</li>
+<li>Unique identification of individuals and groups/entities</li>
+</ul></li>
+<li>Publication practice for research software:
+<ul>
+<li>Publication, formal publication</li>
+<li>Unique identification</li>
+<li>Incentives</li>
+</ul></li>
+<li>Metadata:
+<ul>
+<li>Provision, completeness, correctness, interoperability</li>
+</ul></li>
+</ul>
+</aside>
+</section></section>
+<section><section id="transitive-impact-of-dependencies" class="title-slide slide level1"><h1>(Transitive) impact of dependencies</h1></section><section id="research-questions" class="slide level2">
+<h2>Research questions</h2>
+<ul>
+<li>Improved citation model including software (dependencies)</li>
+<li>Discursivity &amp; compliance functions: define contributions</li>
+<li>Application: transitive credit</li>
+</ul>
+<p><strong>RQ<sub>1</sub>:</strong> How to <em>define</em> the contribution of dependencies to a software?<br />
+<strong>RQ<sub>2</sub>:</strong> How to <em>measure</em> the contribution of dependencies to a software?</p>
+<aside class="notes">
+<ul>
+<li>To re-cap:</li>
+<li>Defined improved model which enables all citation functions for software</li>
+<li>Learned that the discursive function of citation enables the re-writing of history</li>
+<li>Against good scientific practice &amp; compliance function:
+<ul>
+<li>disclose sources and predecessors</li>
+<li>enable reproducibility through complete provenance information</li>
+<li>define contributions to a research product = <strong>fractional contributions</strong></li>
+<li>dependencies (and transitive dependencies) may never be cited (non-research software)</li>
+</ul></li>
+<li>Definition of contribution by humans/papers: manually, augmented (spliddit)</li>
+</ul>
+</aside>
+</section><section id="impact-of-dependencies-on-research-software" class="slide level2">
+<h2>Impact of dependencies on research software</h2>
+<ul>
+<li>Why impact?
+<ul>
+<li><strike>Authority of authors?</strike></li>
+<li><strike>LOC?</strike></li>
+<li><strike>Gameable metrics (stars, downloads, forks)?</strike></li>
+</ul></li>
+<li>Why measure?
+<ul>
+<li>Imprecise &amp; expensive manual definition (“haggling”)</li>
+</ul></li>
+<li>What is “impact”?
+<ul>
+<li>Frequency? Complexity? Efficiency?</li>
+</ul></li>
+</ul>
+<aside class="notes">
+<ul>
+<li>Proposal: Impact seems a good criterion of contribution of dependencies</li>
+<li>All required dependencies impact software directly</li>
+<li>Frequency of use (quantitative)?</li>
+<li>Complexity (qualitative, “intellectual price tag”)?</li>
+<li>Efficiency?</li>
+</ul>
+</aside>
+</section><section id="how-to-measure-impact" class="slide level2">
+<h2>How to measure impact?</h2>
+<ul>
+<li>Static code analysis</li>
+<li>Research software dataset (GitHub, Python)</li>
+<li>???</li>
 </ul>
 </section></section>
-<section><section id="thank-you" class="title-slide slide level1"><h1>Thank you!</h1></section><section id="thanks-for-listening-and-thanks-to" class="slide level2">
-<h2>Thanks for listening, and thanks to …</h2>
-<p>… CFF contributors; Alice Allen, Tom Morrell &amp; Michael Hucka for the invitation; the Software Sustainability Institute (UK) for funding activities around CFF.</p>
+<section><section id="thank-you" class="title-slide slide level1"><h1>Thank you!</h1></section><section id="questions" class="slide level2">
+<h2>Questions?</h2>
 <div class="center">
-<p><a href="https://citation-file-format.github.io">citation-file-format.github.io</a><br />
-<a href="https://github.com/citation-file-format/citation-file-format">github.com/citation-file-format/citation-file-format</a></p>
-<p>stephan.druskat@dlr.de<br />
+<p>stephan.druskat@hu-berlin.de<br />
 Twitter: <a href="http://twitter.com/stdruskat">@stdruskat</a><br />
 ORCiD <a href="https://orcid.org/0000-0003-4925-7248">0000-0003-4925-7248</a><br />
-Slides: <a href="https://doi.org/10.6084/m9.figshare.10296917">doi:10.6084/m9.figshare.10296917</a></p>
+<!-- Slides: [doi:10.6084/m9.figshare.10296917](https://doi.org/10.6084/m9.figshare.10296917) --></p>
 </div>
 </section></section>
-<section><section id="appendix" class="title-slide slide level1"><h1>Appendix</h1></section><section id="references" class="slide level2 unnumbered">
+<section><section id="appendix" class="title-slide slide level1"><h1>Appendix</h1></section><section id="digression-research-software-classification" class="slide level2">
+<h2>Digression: research software classification</h2>
+<ul>
+<li>RQ: How can we classify software as research software?</li>
+</ul>
+</section><section id="software-publication" class="slide level2">
+<h2>Software publication</h2>
+<p>Pros and cons (cf. principles) - Lack of practice (peer review) - Software papers</p>
+</section><section id="metadata" class="slide level2">
+<h2>Metadata</h2>
+<p>How to get it?</p>
+</section><section id="pidgraph" class="slide level2">
+<h2>PIDgraph</h2>
+<p>Implementation of RCG</p>
+</section><section id="why-another-metric" class="slide level2">
+<h2>Why another metric?</h2>
+<p>Yes, why?</p>
+</section><section id="references" class="slide level2 unnumbered">
 <h2>References</h2>
 <div id="refs" class="references" role="doc-bibliography">
-<div id="ref-druskatStandardFormatCITATION2017">
-<p>[1] Stephan Druskat, Radovan Bast, Neil Chue Hong, Alexander Konovalov, Andrew Rowley, and Raniere Silva, “A standard format for CITATION files,” <em>Software and research</em>. Dec-2017 [Online]. Available: <a href="https://www.software.ac.uk/index.php/blog/2017-12-12-standard-format-citation-files">https://www.software.ac.uk/index.php/blog/2017-12-12-standard-format-citation-files</a>.</p>
+<div id="ref-smithSoftwareCitationPrinciples2016">
+<p>[1] Arfon M. Smith, Daniel S. Katz, Kyle E. Niemeyer, and FORCE11 Software Citation Working Group, “Software citation principles,” <em>PeerJ Computer Science</em>, vol. 2, no. e86, 2016 [Online]. Available: <a href="https://doi.org/10.7717/peerj-cs.86">https://doi.org/10.7717/peerj-cs.86</a>.</p>
+</div>
+<div id="ref-druskatSoftwareDependenciesResearch2019">
+<p>[2] Stephan Druskat, “Software and Dependencies in Research Citation Graphs,” <em>Computing in Science and Engineering</em>, pp. 1–1, 2019 [Online]. Available: <a href="https://doi.org/10.1109/MCSE.2019.2952840">https://doi.org/10.1109/MCSE.2019.2952840</a>.</p>
 </div>
 </div>
 </section></section>

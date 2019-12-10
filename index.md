@@ -300,24 +300,38 @@ ORCiD [0000-0003-4925-7248](https://orcid.org/0000-0003-4925-7248)
 
 ## Digression: research software classification
 
-- RQ: How can we classify software as research software?
+- *RQ<sub>3</sub>*: How can we classify software as research software?
+- Mining software repositories
+- Simple attribute tests
+- Topic modeling
+- Machine learning
 
 ## Software publication
 
-Pros and cons (cf. principles)
-- Lack of practice (peer review)
+- Lack of practice of research software publication
+    - Metadata
+    - Unique identification
 - Software papers
+    - Necessary evil
+    - To be cited in addition to software [@smithSoftwareCitationPrinciples2016]
 
 ## Metadata
 
-How to get it?
+- Provision of metadata
+    - By creators
+    - `CITATION.cff`
+- Metadata processing
+    - Ingestion by registries/indexers
 
-## PIDgraph
+## PID graph
 
-Implementation of RCG
+- Possible implementation of research citation graphs
+- [project-freya.eu/en/blogs/blogs/the-pid-graph](http://web.archive.org/web/20190712173134/https://www.project-freya.eu/en/blogs/blogs/the-pid-graph)
 
 ## Why another metric?
 
-Yes, why?
+- Culture around papers publishing
+- More objective metric
+- Not gameable within reason
 
 ## References 

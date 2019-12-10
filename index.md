@@ -288,7 +288,7 @@ D. Katz, “Transitive Credit as a Means to Address Social and Technological Con
 4. Retrieve metrics for dataset
 5. Evaluate metric & measurement implementation
 
-## Impact of dependencies on research software
+## Impact of dependencies in research software
 
 - Why impact?
     - <strike>Authority of authors?</strike>

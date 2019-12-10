@@ -275,7 +275,7 @@ $if(mathjax)$
 
         // Specifies if every single element of the table of contents
         // will be stepped through before moving on to the next slide.
-        fadeInElements: true
+        fadeInElements: false
     },
 
 $endif$
